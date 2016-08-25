@@ -256,6 +256,7 @@
     
     if (_topViewController) {
         [self addChildViewController:_topViewController];
+        _topViewController.view.frame = self.view.bounds;
         [_topViewController didMoveToParentViewController:self];
         
         if ([self isViewLoaded]) {
